@@ -1,0 +1,33 @@
+:root {
+    --bg-color: #25221F;
+    --color: rgb(247, 241, 241);
+}
+
+.section-special {
+    background-color: var(--bg-color);
+}
+
+.section-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-container,
+.details ul li a,
+.social ul li a {
+    color: var(--color);
+    text-transform: capitalize;
+    padding: 1rem 0;
+}
+
+.details ul li a:hover,
+.social ul li a:hover {
+    text-decoration: underline;
+}
+
+address p font {
+    color: white !important
+}

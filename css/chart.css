@@ -1,0 +1,17 @@
+.wrapper {
+    width: 40% !important;
+}
+
+.wrappers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+@media (max-width:700px) {
+    .wrapper {
+        width: 80% !important;
+    }
+}

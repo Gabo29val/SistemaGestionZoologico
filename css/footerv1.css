@@ -1,0 +1,11 @@
+:root {
+    --bg-footer: #ff6800;
+    --color: white;
+}
+
+footer {
+    background-color: #ff6800;
+    padding: 1rem 0;
+    color: var(--color);
+    text-align: center;
+}

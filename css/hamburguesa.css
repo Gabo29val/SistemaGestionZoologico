@@ -1,0 +1,98 @@
+:root {
+    --bg-header: #FF6800;
+    --color: white;
+}
+
+#btn-menu {
+    display: none;
+}
+
+.hamburguer-menu {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .hamburguer-menu {
+        display: block;
+    }
+    .cont-nav {
+        display: none;
+    }
+}
+
+.fb {
+    position: fixed;
+    right: 0;
+    margin: 1rem 1rem;
+    z-index: 100;
+    background-color: var(--bg-header);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10rem;
+}
+
+.fb-c {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.abrir-menu {
+    padding: 1rem 2rem;
+    color: #fff;
+    font-size: 1.8rem;
+    border-radius: 5rem;
+}
+
+#menu {
+    background-color: var(--bg-header);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition: all 0.5s ease-out;
+    width: 0%;
+    visibility: hidden;
+}
+
+#btn-menu:checked~#menu {
+    width: 100%;
+    visibility: visible;
+    margin-left: 0px;
+}
+
+#menu nav {
+    margin-left: -150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#btn-menu:checked~#menu nav {
+    margin-left: 0px;
+}
+
+#menu nav a {
+    color: #fff;
+    font-size: 3rem;
+    transition: all 0.5s ease;
+    will-change: transform;
+}
+
+#menu nav a:hover {
+    transform: scale(1.1);
+}
+
+#menu label {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #fff;
+    font-size: 35px;
+    cursor: pointer;
+}
